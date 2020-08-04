@@ -1,0 +1,53 @@
+class Farm():
+    def __init__(self,name,location):
+        self.name = name
+        self.location = location
+    def getName(self):
+        return self.name
+    def getLocation(self):
+        return self.location
+        
+class Animal():
+    def __init__(self,species,feet,gender):
+        self.species = species
+        self.feet = feet
+        self.gender = gender
+        self.farm = Farm('happy farm','tainan')
+        print(self.species+' lives in the '+self.farm.getName()+' and which locates in '+self.farm.getLocation()+'.')
+animal = Animal('dog',4,'male')
+
+
+'''    
+class Pig(Animal):
+    def __init__(self,species,feet,gender,color):
+        Animal.__init__(self,species,feet,gender) 
+        self.color=color
+        
+    def show_colors(self):
+        print('Hi , I am {0} .'.format(self.color))
+animal_1=Pig('pig',4,'female','black')
+animal_1.show_colors()
+
+class Dog(Animal):
+    def __init__(self,species,feet,gender,name):
+        Animal.__init__(self,species,feet,gender) 
+        self.name = name
+        
+    def show_name(self):
+        print('Hi , my name is {0} .'.format(self.name))
+animal_2=Dog('dog',4,'male','puppy')
+animal_2.show_name()
+
+class Cat(Animal):
+    def __init__(self,species,feet,gender,fur):
+        Animal.__init__(self,species,feet,gender) 
+        self.fur=fur
+        
+    def show_fur(self):
+        print('Hi , my fur is {0} .'.format(self.fur))
+animal_3=Cat('cat',4,'female','fluffy')
+animal_3.show_fur()
+'''
+
+    
+
