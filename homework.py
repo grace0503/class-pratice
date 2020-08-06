@@ -3,7 +3,7 @@ class Customer :
         self.id = id
         self.birthday = birthday
         self.address = address
-        self.accounts = Account('grace','20200805','10000')
+        self.account = Account('grace','20200805','10000')
 class Account():
     def __init__(self,accNo,date,balance):
         self.accNo = accNo
@@ -40,10 +40,10 @@ class Deposit(Transaciton):
         super().__init__(tid,tDate)
         self.dAmount = dAmount
 class  Transfer (Transaciton):
-    def __init__(self,tid,tDate,tAmount,bankNo,account):
+    def __init__(self,tid,tDate,tAmount,bankNo,accounts):
         super().__init__(tid,tDate)
         self.tAmount = tAmount
         self.bankNo = bankNo
-        self.account = account
+        self.accounts = accounts
 
 
